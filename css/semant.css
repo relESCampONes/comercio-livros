@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    background: #333;
+}
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+header h1 a {
+    display: flex;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png) no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    text-indent: -9000px;
+    mix-blend-mode: difference;
+    transition: 0.7s;
+}
+header h1 a:hover {
+    filter: sepia(90%);
+    transform: scale(1.3);
+}
+#semant, #produtos, #contato, #login {
+    color: black;
+    background: #fff;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #fff;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    cursor: default;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+    display: inline-block;
+}
+nav ul li a:hover {
+    transform: scale(1.05);
+    color: cyan;
+}
+.icons {
+    display: flex;
+    align-items: center;
+}
+.icons a {
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5rem;
+    display: inline-block;
+    transition: 0.4s;
+}
+.icons a:hover {
+    transform: scale(1.15);
+    color: cyan;
+}
+main {
+    padding: 20px;
+    margin: 10px;
+    line-height: 1.3em;
+}
+main h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.conteudo-semant, .conteudo-produtos, .conteudo-contato, .conteudo-login {
+    display: flex;
+}
+#inicio, .contato {
+    background: #fff;
+}
+section {
+    flex: 3;
+    border-radius: 10px;
+    padding: 20px;
+}
+.conteudo-produtos section {
+    background: #fff;
+    margin: 0 15px;
+}
+.conteudo-produtos img {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55%;
+}
+.conteudo-produtos section h2 {
+    margin: 0.2em 0; 
+}
+.conteudo-produtos section p {
+    font-size: 0.7em;
+    line-height: 1.2;
+}
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+h2 {
+    color: #333;
+}
+h2#sobre {
+    color: #fff;
+}
+article {
+    background: #fff;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+article ul {
+    padding-left: 15px;
+}
+aside {
+    flex: 2;
+    background: #e2e2e2;
+    padding: 20px;
+    border-radius: 10px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+.conteudo-produtos div {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    margin-top: 1.2em;
+    text-align: right;
+}
+.inteiro {
+    font-size: 2.3rem;
+}
+.moeda, .decimal {
+    font-size: 0.7em;
+    font-weight: 500;
+    position: relative;
+    bottom: 1.4em;
+}
+.conteudo-contato span {
+    font-weight: 700;
+}
+#tela-login {
+    color: #fff;
+    text-transform: uppercase;
+}
+#tela-login {
+    position: relative;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: transparent;
+}
+#tela-login h1 {
+    font-size: 2rem;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-radius: 25px;
+    border: 1.5px solid #fff;
+}
+.inputbox:hover {
+    border-color: cyan;
+}
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #f4f4f4;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: 0;
+    background: #333;
+    padding: 0px 10px;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    padding-left: 25px;
+    color: #f4f4f4;
+    box-sizing: border-box;
+}
+.inputbox ion-icon {
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    top: 20px;
+}
+.forget {
+    margin: 35px 0;
+    font-size: 0.65rem;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+}
+.forget label {
+    display: flex;
+    align-items: center;
+}
+.forget label input {
+    margin-right: 3px;
+}
+.forget a:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    border: 1.5px solid;
+    border-color: #fff;
+    color: #333;
+}
+#login-page:hover {
+    background: #333;
+    border-color: cyan;
+    color: cyan;
+}
+#login-page:active {
+    background: cyan;
+    color: #333;
+}
+.register {
+    font-size: 0.65rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+.notification {
+    position: relative;
+}
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: red;
+    border-radius: 40%;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    display: none;
+}
+.notification-box {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    color: black;
+    font-size: 0.6em;
+}
+.shake {
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}

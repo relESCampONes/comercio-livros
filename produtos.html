@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/semant.css">
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="semant.html">Meu Site</a></h1>
+        <nav>
+            <ul>
+                <li><a href="semant.html">Início</a></li>
+                <li><a id="produtos" href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#" class="notification" onclick="toggleNotificationBox(event); shakeIcon(this)"><i
+                    class="fas fa-bell"></i>
+                <span class="badge" id="price-notification">0</span></a>
+            <div class="notification-box" id="notification-box">
+                <p id="notification-content"></p>
+            </div>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Livros</h1>
+        <div class="conteudo-produtos">
+            <section>
+                <a href=""><img src="./img/mat.png" alt="matematica">
+                    <h2>Matemática</h2>
+                    <p>Podem ser exportados para todo o Brasil via correios.</p>
+                    <div id="matematica"><span class="moeda">R$</span><span class="inteiro"></span><span
+                            class="decimal"></span></div>
+                </a>
+            </section>
+            <section>
+                <a href=""><img src="./img/port.png" alt="portugues">
+                    <h2>Português</h2>
+                    <p>Podem ser exportados para todo o Brasil via correios.</p>
+                    <div id="portugues"><span class="moeda">R$</span><span class="inteiro"></span><span
+                            class="decimal"></span></div>
+                </a>
+            </section>
+            <section>
+                <a href=""><img src="./img/hist.png" alt="historia">
+                    <h2>História</h2>
+                    <p>Podem ser exportados para todo o Brasil via correios.</p>
+                    <div id="historia"><span class="moeda">R$</span><span class="inteiro"></span><span
+                            class="decimal"></span></div>
+                </a>
+            </section>
+            <section>
+                <a href=""><img src="./img/socio.png" alt="sociologia">
+                    <h2>Sociologia</h2>
+                    <p>Podem ser exportados para todo o Brasil via correios.</p>
+                    <div id="sociologia"><span class="moeda">R$</span><span class="inteiro"></span><span
+                            class="decimal"></span></div>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/semant.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML Semântico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/semant.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="semant.html">Comércio de livros</a></h1>
+        <nav>
+            <ul>
+                <li><a id="semant" href="semant.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#" class="notification" onclick="toggleNotificationBox(event); shakeIcon(this)"><i class="fas fa-bell"></i>
+                <span class="badge" id="price-notification">0</span></a>
+            <div class="notification-box" id="notification-box">
+                <p id="notification-content"></p>
+            </div>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteudo-semant">
+            <section id="inicio">
+                <h2>Bem-vindo ao Meu Site</h2><br>
+                <p>Este é um exemplo de como utilizar HTML semântico para criar uma página web bem estruturada. Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Odio, cupiditate? Totam ut, doloremque rerum
+                    eaque ducimus nisi, est amet ex fuga quasi recusandae adipisci sit? At in aliquam doloremque
+                    quisquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, dolorem temporibus
+                    voluptatibus cupiditate consequatur, omnis eius doloribus quod suscipit quis, ducimus laudantium
+                    accusantium? Dicta, ex qui ducimus officia cumque sint? Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime commodi exercitationem fugiat praesentium quam temporibus harum reiciendis
+                    laudantium! Doloribus libero nemo rerum est facilis culpa expedita vitae atque eveniet saepe. 1941
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quos id tenetur adipisci numquam,
+                    maxime, excepturi eius consectetur repellat, suscipit quibusdam a aspernatur aliquid aperiam ea qui
+                    dolorem perferendis minus?</p>
+            </section>
+
+            <section id="sobre">
+                <h2 id="sobre">Sobre Nós</h2>
+                <article>
+                    <h3>Nossa História</h3><br>
+                    <p>Fundado em 2024, nosso site tem como objetivo fornecer conteúdo de qualidade sobre
+                        desenvolvimento web.</p>
+                </article>
+                <article>
+                    <h3>Nossos Valores</h3><br>
+                    <ul>
+                        <li>Determinação</li>
+                        <li>Respeito</li>
+                        <li>Parceria</li>
+                        <li>Cooperação</li>
+                        <li>Segurança</li>
+                        <li>Trabalho</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Missão</h3><br>
+                    <p>Nossa missão é educar e inspirar desenvolvedores a criar páginas web acessíveis e bem
+                        estruturadas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ad corporis dicta
+                        voluptatum atque magni id sed accusamus consectetur facere pariatur maiores suscipit nihil nam,
+                        quos repellat, ipsa ea? Sapiente.</p>
+                </article>
+            </section>
+
+            <aside>
+                <div>
+                    <h2>Dicas Rápidas</h2>
+                    <p>Utilize tags semânticas para melhorar a acessibilidade e SEO do seu site.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro culpa ipsa doloremque iure
+                        exercitationem consequuntur aspernatur enim incidunt dolores, doloribus consectetur, nobis
+                        possimus sit, rerum veritatis neque tempora numquam?Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit minima voluptatem alias neque distinctio? Reprehenderit ratione,
+                        porro quisquam nemo voluptatibus sunt quas perspiciatis amet vel ad dolore consectetur iure
+                        autem!</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./js/semant.js">
+    </script>
+</body>
+
+</html>

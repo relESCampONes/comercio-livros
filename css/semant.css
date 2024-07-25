@@ -249,6 +249,7 @@ input:valid ~ label {
 }
 .forget a:hover {
     text-decoration: underline;
+    color: cyan;
 }
 button {
     width: 100%;
